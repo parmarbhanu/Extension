@@ -1,0 +1,49 @@
+:root{
+    --bg-color:#141E46;
+    --heading:#63e352;
+    --btn-bg:#b34519;
+}
+body{
+    text-align: center;
+    padding: 10px;
+    width: 350px;
+    outline: none;
+    border: none;
+}
+
+.name{
+    color:var(--heading);
+}
+
+.catch-btn{
+    background-color: var(--btn-bg);
+    border-radius: 10px;
+    padding: 0.5rem 3rem;
+    cursor: pointer;
+}
+
+.title{
+    margin-top: 20px;
+    display: none;
+    grid-template-columns: 1fr .2fr;
+    text-align: left;
+    font-size: 15px;
+}
+
+.copy-btn{
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    cursor: pointer;
+}
+.copy-btn img{
+    width: 20px;
+
+}
+
+:is(.copy-btn,.catch-btn):active{
+    transform: scaleY(.9);
+
+}
